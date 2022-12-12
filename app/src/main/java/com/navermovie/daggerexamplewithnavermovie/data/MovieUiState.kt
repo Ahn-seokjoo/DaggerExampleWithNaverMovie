@@ -1,4 +1,4 @@
-package com.navermovie.daggerexamplewithnavermovie
+package com.navermovie.daggerexamplewithnavermovie.data
 
 data class MovieUiState(
     val poster: String = "",

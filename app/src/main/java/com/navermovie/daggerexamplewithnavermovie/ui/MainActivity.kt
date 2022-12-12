@@ -1,7 +1,8 @@
-package com.navermovie.daggerexamplewithnavermovie
+package com.navermovie.daggerexamplewithnavermovie.ui
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import com.navermovie.daggerexamplewithnavermovie.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

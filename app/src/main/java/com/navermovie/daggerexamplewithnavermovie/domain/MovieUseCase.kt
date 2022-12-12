@@ -1,5 +1,7 @@
-package com.navermovie.daggerexamplewithnavermovie
+package com.navermovie.daggerexamplewithnavermovie.domain
 
+import com.navermovie.daggerexamplewithnavermovie.NetworkManager
+import com.navermovie.daggerexamplewithnavermovie.data.MovieRepositoryImpl
 import javax.inject.Inject
 
 class MovieUseCase @Inject constructor(

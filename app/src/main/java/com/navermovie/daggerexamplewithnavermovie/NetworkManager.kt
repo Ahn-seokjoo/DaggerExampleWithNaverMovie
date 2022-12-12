@@ -1,5 +1,6 @@
 package com.navermovie.daggerexamplewithnavermovie
 
+import com.navermovie.daggerexamplewithnavermovie.data.MovieApi
 import okhttp3.OkHttpClient
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory

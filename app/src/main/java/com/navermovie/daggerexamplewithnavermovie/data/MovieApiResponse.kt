@@ -1,4 +1,4 @@
-package com.navermovie.daggerexamplewithnavermovie
+package com.navermovie.daggerexamplewithnavermovie.data
 
 
 import com.google.gson.annotations.SerializedName

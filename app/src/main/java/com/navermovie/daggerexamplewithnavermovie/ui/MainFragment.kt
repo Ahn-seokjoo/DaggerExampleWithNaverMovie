@@ -1,10 +1,11 @@
-package com.navermovie.daggerexamplewithnavermovie
+package com.navermovie.daggerexamplewithnavermovie.ui
 
 import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import androidx.lifecycle.lifecycleScope
+import com.navermovie.daggerexamplewithnavermovie.R
 import com.navermovie.daggerexamplewithnavermovie.databinding.FragmentMainBinding
 import kotlinx.coroutines.launch
 

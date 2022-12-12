@@ -1,4 +1,4 @@
-package com.navermovie.daggerexamplewithnavermovie
+package com.navermovie.daggerexamplewithnavermovie.ui
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
@@ -6,6 +6,7 @@ import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
+import com.navermovie.daggerexamplewithnavermovie.data.MovieUiState
 import com.navermovie.daggerexamplewithnavermovie.databinding.RecyclerviewItemBinding
 
 class MovieAdapter : ListAdapter<MovieUiState, MovieAdapter.MovieViewHolder>(movieDiffUtil) {

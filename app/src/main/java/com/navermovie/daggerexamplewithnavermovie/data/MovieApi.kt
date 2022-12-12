@@ -1,4 +1,4 @@
-package com.navermovie.daggerexamplewithnavermovie
+package com.navermovie.daggerexamplewithnavermovie.data
 
 import retrofit2.http.GET
 import retrofit2.http.Query

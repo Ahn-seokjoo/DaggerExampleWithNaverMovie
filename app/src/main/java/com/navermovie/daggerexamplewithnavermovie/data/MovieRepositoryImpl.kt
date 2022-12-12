@@ -1,5 +1,6 @@
-package com.navermovie.daggerexamplewithnavermovie
+package com.navermovie.daggerexamplewithnavermovie.data
 
+import com.navermovie.daggerexamplewithnavermovie.domain.MovieRepository
 import javax.inject.Inject
 
 class MovieRepositoryImpl @Inject constructor(private val movieApi: MovieApi) : MovieRepository {
