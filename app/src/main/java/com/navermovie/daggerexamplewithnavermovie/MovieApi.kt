@@ -8,5 +8,4 @@ interface MovieApi {
     suspend fun getMovieList(
         @Query("query") query: String,
     ): MovieApiResponse
-
 }

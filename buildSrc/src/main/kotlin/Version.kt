@@ -9,4 +9,5 @@ object Version {
     const val gsonVersion = "2.9.0"
     const val coroutineVersion = "1.6.4"
     const val daggerVersion = "2.44.2"
+    const val fragmentVersion = "1.6.0-alpha04"
 }

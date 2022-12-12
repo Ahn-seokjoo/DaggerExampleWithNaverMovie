@@ -51,6 +51,7 @@ dependencies {
     annotationProcessor(Libs.daggerAnnotationProcessor)
     implementation(Libs.coroutine)
     implementation(Libs.gson)
+    implementation(Libs.fragment)
     implementation(deps.glide)
     implementation(deps.bundles.lifecycle)
 }
