@@ -47,6 +47,7 @@ dependencies {
     implementation(Libs.retrofit)
     implementation(Libs.okHttp)
     implementation(Libs.dagger)
+    kapt(Libs.daggerCompiler)
     implementation(Libs.daggerSupport)
     annotationProcessor(Libs.daggerAnnotationProcessor)
     implementation(Libs.coroutine)

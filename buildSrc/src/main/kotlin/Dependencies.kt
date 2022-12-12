@@ -9,6 +9,7 @@ object Libs {
     const val gson = "com.squareup.retrofit2:converter-gson:${Version.gsonVersion}"
     const val coroutine = "org.jetbrains.kotlinx:kotlinx-coroutines-core:${Version.coroutineVersion}"
     const val dagger = "com.google.dagger:dagger-android:${Version.daggerVersion}"
+    const val daggerCompiler = "com.google.dagger:dagger-compiler:${Version.daggerVersion}"
     const val daggerSupport = "com.google.dagger:dagger-android-support:${Version.daggerVersion}"
     const val daggerAnnotationProcessor = "com.google.dagger:dagger-android-processor:${Version.daggerVersion}"
     const val fragment = "androidx.fragment:fragment-ktx:${Version.fragmentVersion}"

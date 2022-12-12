@@ -1,20 +1,28 @@
 package com.navermovie.daggerexamplewithnavermovie.ui
 
+import android.content.Context
 import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.Fragment
-import androidx.fragment.app.activityViewModels
 import androidx.lifecycle.lifecycleScope
+import com.navermovie.daggerexamplewithnavermovie.MovieApplication
 import com.navermovie.daggerexamplewithnavermovie.R
 import com.navermovie.daggerexamplewithnavermovie.databinding.FragmentMainBinding
 import kotlinx.coroutines.launch
+import javax.inject.Inject
 
 class MainFragment : Fragment(R.layout.fragment_main) {
     private var _binding: FragmentMainBinding? = null
     private val binding get() = _binding!!
-    private val movieViewModel: MovieViewModel by activityViewModels()
+    @Inject
+    lateinit var movieViewModel: MovieViewModel
     private val movieAdapter by lazy {
         MovieAdapter()
+    }
+
+    override fun onAttach(context: Context) {
+        super.onAttach(context)
+        (requireActivity().applicationContext as MovieApplication).appComponent.inject(this)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
