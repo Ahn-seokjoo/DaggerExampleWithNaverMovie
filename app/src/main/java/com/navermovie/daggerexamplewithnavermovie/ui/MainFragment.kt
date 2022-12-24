@@ -4,6 +4,8 @@ import android.content.Context
 import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.activityViewModels
+import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.lifecycleScope
 import com.navermovie.daggerexamplewithnavermovie.MovieApplication
 import com.navermovie.daggerexamplewithnavermovie.R
@@ -14,8 +16,11 @@ import javax.inject.Inject
 class MainFragment : Fragment(R.layout.fragment_main) {
     private var _binding: FragmentMainBinding? = null
     private val binding get() = _binding!!
+
     @Inject
-    lateinit var movieViewModel: MovieViewModel
+    lateinit var viewModelFactory: ViewModelProvider.Factory
+    private val movieViewModel: MovieViewModel by activityViewModels(factoryProducer = { viewModelFactory })
+
     private val movieAdapter by lazy {
         MovieAdapter()
     }
@@ -46,10 +51,12 @@ class MainFragment : Fragment(R.layout.fragment_main) {
 
     private fun initView() {
         binding.recyclerView.adapter = movieAdapter
+//        movieViewModel = ViewModelProvider(this, viewModelFactory)[MovieViewModel::class.java]
     }
 
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
+        viewModelStore.clear()
     }
 }
